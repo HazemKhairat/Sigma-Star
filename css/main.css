@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center center;
+}
+.home .layout{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.home .nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    
+}
+.home .nav h1{
+    margin: 10px;
+}
+.home .nav ul{
+    list-style-type: none;
+    display: flex;
+}
+.home .nav ul li{
+    margin: 10px;
+}
+.home .nav ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.home .nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+/* End nav bar */
+.home .caption{
+    padding: 200px 0px;
+    background-color: transparent;
+    text-align: center;
+}
+.home .caption h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 50px;
+    padding: 20px 0px;
+    font-family: monospace;
+    color: white;
+}
+.home .caption button{
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgba(138, 43, 226, 0.5);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.home .caption img{
+    width: 200px;
+}
+/* End home */
+.about{
+    padding: 100px 0px;
+    background-image: url(https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.about .about_header{
+    color: white;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    border: 5px solid white;
+    border-top: none;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+}
+.about .container{
+
+    width: 90%;
+    margin: auto;
+}
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .imagedata{
+    width: 30%;
+}
+.about .imagedata img{
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+.about .info{
+    width: 50%;
+    color: white;
+}
+.contact{
+    padding: 100px 0px;
+}
+.contact .contact_header{
+    background-color: transparent;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+.contact .contact_header .under{
+    background: linear-gradient(to left,black, red ,black);
+    height: 5px;
+    border-radius: 20px;
+    
+}
+.contact .container{
+   width: 80%;
+   margin: auto;
+}
+.contact .row{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact .row .info{
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contact .row .info .googleMaps iframe{
+    width: 100%;
+    height: 80%;
+}
+.contact .row .form-data{
+    padding-top: 35px;
+    width: 40%;
+}
+.form-control{
+    width: 100%;
+}
+.form-control:focus{
+    outline: 2px solid red;
+    border-radius: 20px;
+}
